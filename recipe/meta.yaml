@@ -1,6 +1,6 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 {% set name = "intake-parquet" %}
-{% set sha256 = "4d72e8faf2c3ca2f9a8311ffc73510040e764949b7706f44187895b278ca64be" %}
+{% set sha256 = "1d7ff4b87f9eb73caa59aa1f3304bfa762d82293541ff850b90ea281c0c670d2" %}
 
 package:
    name: {{ name }}
