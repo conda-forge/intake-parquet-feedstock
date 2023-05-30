@@ -1,10 +1,10 @@
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 {% set name = "intake-parquet" %}
-{% set sha256 = "353078f8b3358abdf0b1fa959fb8bd7f40466c8d04c474f51015b13822b9b8e3" %}
+{% set sha256 = "57e43795f53d5e44d375683f13532bae248005ff428d177613bc7607ce4a0f89" %}
 
 package:
-   name: {{ name }}
-   version: {{ version }}
+  name: {{ name }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
